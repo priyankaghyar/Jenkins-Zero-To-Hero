@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'priya194/maven-priyanka-docker-agent:v1'
+      image 'priya194/maven-priyanka-docker-agent:tagname'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
